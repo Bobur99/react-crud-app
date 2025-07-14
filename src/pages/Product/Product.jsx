@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Product.css";
 import { products } from "../../Products";
-import ProductCard from "../../components/ProductCard/Productcard";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import { toast } from "react-toastify";
 import StateContext from "../../context/context";
 import { addToBasketAction } from "../../reducer/basketReducer/basketAction";
