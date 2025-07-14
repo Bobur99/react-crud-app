@@ -1,0 +1,27 @@
+.card-input{
+    margin: 30px;
+}
+
+.container{
+    margin: 30px;
+}
+
+.card{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.increment-block{
+    margin: 30px;
+    margin-bottom: 5px;
+}
+
+.increment-block span{
+    display: inline-block;
+    margin: 10px;
+}
+
+h4{
+    margin: 0 30px 30px 30px;
+}

@@ -1,0 +1,15 @@
+.navbar{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar button{
+    padding: 5px;
+    border: none;
+}

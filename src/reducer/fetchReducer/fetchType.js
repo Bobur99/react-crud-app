@@ -1,0 +1,5 @@
+const LOADING = 'LOADING'
+const ERROR = 'ERROR'
+const SUCCESS = 'SUCCESS'
+
+export {LOADING, ERROR, SUCCESS}

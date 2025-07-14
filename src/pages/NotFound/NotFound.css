@@ -1,0 +1,24 @@
+.container-notfound{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-notfound h1{
+    color: rgb(24, 98, 172);
+}
+
+.container-notfound button{
+    font-size: 18px;
+    padding: 10px 20px;
+    background: rgb(24, 98, 172);
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+

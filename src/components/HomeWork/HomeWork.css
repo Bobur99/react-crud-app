@@ -1,0 +1,53 @@
+.wrapper-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    margin: 30px;
+    margin-bottom: 100px;
+
+}
+
+.card-product{
+    width: 250px;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.images{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.images img{
+    width: 100%;
+}
+
+.delete-btn{
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background: green;
+    margin-left: 30px;
+}
+
+.wrapper{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}

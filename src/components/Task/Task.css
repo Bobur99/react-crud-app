@@ -1,0 +1,18 @@
+input {
+    margin-right: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-block button{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-block{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}

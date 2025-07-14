@@ -1,0 +1,35 @@
+select{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+input{
+    padding: 10px;
+}
+
+.order-request button{
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+.cards-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.order-card {
+    width: 160px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.btn-del{
+    background: #dc3545;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}

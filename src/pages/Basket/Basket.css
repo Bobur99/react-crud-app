@@ -1,0 +1,106 @@
+.basket-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket__card-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.basket__card-wrapper input{
+    margin-right: 20px;
+}
+
+.basket__card {
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  margin: 15px 0;
+}
+
+.img-wrapper {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.img-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.basket-container {
+  display: flex;
+}
+
+.basket__cards {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 70%;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.card-content {
+  width: 90%;
+  padding-block: 20px;
+}
+
+.card-content h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card-content h5 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.count-btns {
+  margin-bottom: 20px;
+}
+
+.count-btns .countAdd {
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}
+
+.countRemove {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.count-btns span {
+  margin: 0 10px;
+}
+
+.card-deleteBtn, .delete__btn-selected {
+  color: #fff;
+  background: #dc3545;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 10px;
+}
+
+.card-editBtn {
+  color: #fff;
+  background: #198754;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 10px;
+}
+/* ************** */
+
+.basket__total-infoBlock {
+  width: 28%;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 10px;
+}

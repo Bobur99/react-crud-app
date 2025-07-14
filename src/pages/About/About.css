@@ -1,0 +1,48 @@
+.video__block {
+  position: relative;
+  width: 280px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* чёрный прозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.play_icon {
+  font-size: 48px;
+  color: white;
+}
+
+.pause_icon {
+  font-size: 48px;
+  color: white;
+}
+
+.video__block:hover .overlay {
+  opacity: 1;
+}
+
+.audio__block{
+    width: 50px;
+    height: 50px;
+}
+
+.audio_icon-play{
+  font-size: 48px;
+}
+
+.audio_icon-pause{
+  font-size: 48px;
+}
