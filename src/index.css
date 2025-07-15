@@ -35,6 +35,14 @@ button a.active {
   border-radius: 10px;
 }
 
+.card-deleteBtn{
+   color: #fff;
+  background: #dc3545;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 10px;
+}
+
 @layer {
     html, body, .route-wrapper{
         @apply !h-full
