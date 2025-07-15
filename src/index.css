@@ -27,6 +27,14 @@ button a.active {
   cursor: pointer;
 }
 
+.card-editBtn {
+  color: #fff;
+  background: #198754;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 10px;
+}
+
 @layer {
     html, body, .route-wrapper{
         @apply !h-full
@@ -65,7 +73,7 @@ button a.active {
   }
 
   .form-login {
-    @apply max-w-[450px];
+    @apply min-w-[300px];
   }
 
 

@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import "./Basket.css";
 import StateContext from "../../context/context";
 import {
   decreaseItemCountAction,
@@ -48,51 +47,52 @@ function Basket() {
   return (
     <div className="baskets__container-wrapper min-h-screen">
       <h1 className="dark:text-white">Basket</h1>
-      <div className="container  basket-container dark:text-white !pb-[50px]">
+      <div className="container flex dark:text-white !pb-[50px]">
         {basketState.basketItems.length > 0 ? (
-          <div className="basket-block">
-            <div className="basket__cards">
+          <div className="w-full sm:flex justify-between">
+            <div className="flex flex-col border border-black dark:border-white w-full sm:w-[70%] p-[10px] rounded-[16px]">
               <button
                 onClick={handleDeleteSelected}
-                className="delete__btn-selected"
+                className="text-white bg-[#dc3545] border-none px-6 py-2 rounded-[10px]"
               >
                 Delete Selected {selectedItems.length}
               </button>
               {basketState.basketItems.map((el) => {
                 return (
-                  <div key={el.id} className="basket__card-wrapper">
+                  <div key={el.id} className="flex items-center">
                     <input
+                      className="mr-5"
                       type="checkbox"
                       checked={selectedItems.includes(el.id)}
                       onChange={() => toggleSelect(el.id)}
                     />
-                    <div key={el.id} className="basket__card">
-                      <div className="img-wrapper">
-                        <img src={el.image} alt={el.title} />
+                    <div key={el.id} className=" border dark:border-white border-black p-5 rounded-[16px] flex my-[15px]">
+                      <div className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] mr-[15px]">
+                        <img className="w-full h-full object-contain" src={el.image} alt={el.title} />
                       </div>
 
-                      <div className="card-content">
-                        <h3>{el.title}</h3>
-                        <h5>{el.price}$</h5>
-                        <div className="count-btns flex items-center">
+                      <div className="w-[90%] py-[20px]">
+                        <h3 className="text-[16px] sm:text-2xl mb-[10px]">{el.title}</h3>
+                        <h5 className="text-[15px] sm:text-xl mb-[20px]">{el.price}$</h5>
+                        <div className="mb-5 flex items-center">
                           <button
                             disabled={el.count === 1 ? true : false}
                             onClick={() => handlerRemove(el.id)}
-                            className="dark:text-black countRemove bg-gray-200 h-8 w-8 flex items-center justify-center"
+                            className="dark:text-black p-[8px_10px] rounded-[5px] border-none bg-gray-200 h-8 w-8 flex items-center justify-center"
                           >
                             -
                           </button>
-                          <span>{el.count}</span>
+                          <span className="mx-[10px]">{el.count}</span>
                           <button
                             onClick={() => handlerAdd(el.id)}
-                            className=" dark:text-black countAdd bg-gray-200 h-8 w-8 flex items-center justify-center"
+                            className=" dark:text-black rounded-[5px] border-none p-[8px] bg-gray-200 h-8 w-8 flex items-center justify-center"
                           >
                             +
                           </button>
                         </div>
                         <button
                           onClick={() => handlerDelete(el.id)}
-                          className="card-deleteBtn"
+                          className="text-white bg-[#dc3545] border-none px-6 py-2 rounded-[10px]"
                         >
                           Delete
                         </button>
@@ -104,7 +104,7 @@ function Basket() {
               {/* //// */}
             </div>
 
-            <div className="basket__total-infoBlock">
+            <div className="w-full mt-5 sm:mt-0 sm:w-[28%] border border-black dark:border-white rounded-[16px] p-[10px]">
               <h2>Total price: {getTotalPrice().toFixed(2)}$</h2>
             </div>
           </div>

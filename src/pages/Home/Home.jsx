@@ -68,23 +68,33 @@ function Home() {
     }
   };
 
-  // useEffect(() => {
-  //   console.log("componentDidMount");
-  // }, []);
-  // useEffect(() => {
-  //   console.log("componentDidUpdate");
-  // }, [count]);
-  // useEffect(() => {
-  //   return () => {
-  //     console.log("componentWillUnmount");
-  //   };
-  // }, []);
-
   return (
     <div className="container dark:text-white min-h-screen">
       <h1 className="dark:text-white">Home page</h1>
-      <div className="wrapper w-full flex">
-        <div className="left-block">
+      <div className="wrapper mx-5">
+        <div className="left-block mb-10">
+          <h3 className="!mb-5">Weather Forecast using Weather API:</h3>
+          <form className="flex" onSubmit={handleSubmit}>
+            <input
+              ref={countryRefName}
+              type="text"
+              className="border !m-0 !mr-2 rounded-[6px]"
+              placeholder="Enter country..."
+            />
+            <button className="!px-7 btn-default btn-darkMode">send</button>
+          </form>
+          {loading && <h1>Loading...</h1>}
+          {error && <h1 className="dark:text-red-500">{error}</h1>}
+          {success && temperature && (
+            <div className="weather-card !mt-8 !p-6 rounded-xl shadow-lg bg-white dark:bg-slate-700 text-slate-800 dark:text-white max-w-sm w-full">
+              <h2 className="text-2xl font-semibold !mb-2.5">
+                {temperature.name}
+              </h2>
+              <p>{`🌡 Temp: ${(temperature?.main.temp - 273).toFixed(2)}°C`}</p>
+            </div>
+          )}
+        </div>
+        <div className="right-block hidden">
           {/* <h2 className="text-2xl">
             Hello, {userState.currentUser.name} {userState.currentUser.surname}
           </h2> */}
@@ -135,29 +145,6 @@ function Home() {
           <br />
           <Task />
           <Task_1 />
-        </div>
-
-        <div className="right-block !mx-[300px] !mt-[60px]">
-          <h3 className="!mb-5">Weather Forecast using Weather API:</h3>
-          <form className="flex" onSubmit={handleSubmit}>
-            <input
-              ref={countryRefName}
-              type="text"
-              className="border !m-0 !mr-2 rounded-[6px]"
-              placeholder="Enter country..."
-            />
-            <button className="!px-7 btn-default btn-darkMode">send</button>
-          </form>
-          {loading && <h1>Loading...</h1>}
-          {error && <h1 className="dark:text-red-500">{error}</h1>}
-          {success && temperature && (
-            <div className="weather-card !mt-8 !p-6 rounded-xl shadow-lg bg-white dark:bg-slate-700 text-slate-800 dark:text-white max-w-sm w-full">
-              <h2 className="text-2xl font-semibold !mb-2.5">
-                {temperature.name}
-              </h2>
-              <p>{`🌡 Temp: ${(temperature?.main.temp - 273).toFixed(2)}°C`}</p>
-            </div>
-          )}
         </div>
       </div>
     </div>

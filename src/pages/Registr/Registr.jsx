@@ -45,8 +45,8 @@ function Registr() {
   
 
   return (
-    <div className="auth-container registr-container bg-[url(/src/assets/images/Bg.png)] h-full w-full bg-no-repeat bg-cover">
-      <form onSubmit={handlerSubmit} action="" className="form-login text-white">
+    <div className="auth-container registr-container bg-[url(/src/assets/images/Bg.png)] bg-no-repeat bg-cover">
+      <form onSubmit={handlerSubmit} action="" className="form-login text-white w-[450px] mx-6">
       <h1 className="text-3xl">Registration</h1>
         <input onChange={(e) => setName(e.target.value)} required type="text" placeholder="Name" />
         <input onChange={(e) => setSurname(e.target.value)} required type="text" placeholder="Surname" />

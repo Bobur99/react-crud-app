@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 // import Img from './assets/images/react_img.jpg'
 // import Banner from './components/Banner/Banner'
 // import Navbar from "./components/Navbar/Navbar";

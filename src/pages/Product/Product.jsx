@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "./Product.css";
 import { products } from "../../Products";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { toast } from "react-toastify";
@@ -27,7 +26,7 @@ function Product() {
   return (
     <div className="container min-h-screen dark:text-white">
       <h1>Product page</h1>
-      <div className="product-container">
+      <div className="flex flex-wrap justify-center gap-10">
         {products.map((item) => (
           <ProductCard key={item.id} addToBasket={addToBasket} item={item} />
         ))}

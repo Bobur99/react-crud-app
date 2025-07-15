@@ -133,18 +133,18 @@ function About() {
             <input
               required
               name="name"
-              className="border rounded-[6px] !py-2.5 !px-4 !mr-2.5"
+              className="border rounded-[6px] mb-5 sm:mb-0 !py-2.5 !px-4 sm:!mr-2.5 w-full sm:w-auto"
               type="text"
               placeholder="Enter user name..."
             />
             <input
               required
               name="age"
-              className="border rounded-[6px] !py-2.5 !px-4 !mr-2.5"
+              className="border rounded-[6px] mb-5 sm:mb-0 !py-2.5 !px-4 sm:!mr-2.5 w-full sm:w-auto"
               type="number"
               placeholder="Enter user age..."
             />
-            <button className="btn-default btn-darkMode !py-3 !px-7">
+            <button className="btn-default btn-darkMode mb-5 sm:mb-0 !py-3 !px-7 w-full sm:w-auto">
               Send
             </button>
           </form>

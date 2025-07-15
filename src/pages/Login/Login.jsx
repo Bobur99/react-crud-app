@@ -44,8 +44,8 @@ function Login() {
   };
 
   return (
-    <div className="auth-container login-container bg-[url(/src/assets/images/Bg.png)] h-full w-full bg-no-repeat bg-cover">
-      <form onSubmit={hasUserInDB} action="" className="form-login  text-white">
+    <div className="auth-container login-container bg-[url(/src/assets/images/Bg.png)] bg-no-repeat bg-cover">
+      <form onSubmit={hasUserInDB} action="" className="form-login  text-white mx-6">
         <h1 className="text-center mt-0 mb-[20px] text-3xl">Login</h1>
         <input
           onChange={(e) => {

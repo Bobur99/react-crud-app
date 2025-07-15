@@ -1,5 +1,3 @@
-import React from 'react'
-import './MovieDetail.css'
 import { useParams } from 'react-router-dom'
 import { movies } from '../../movies'
 
@@ -11,7 +9,7 @@ function MovieDetail() {
   return (
     <div className='container text-white min-h-screen'>
         <h1>Movie Detail info</h1>
-        <div className="w-300 p-[15px]">
+        <div className="min-w-full p-[15px]">
             <div className="detail-wrapper-img !mb-1.5">
                 <img src={detalInfoMovies.posterUrl} alt={detalInfoMovies.movieTitle} />
             </div>
